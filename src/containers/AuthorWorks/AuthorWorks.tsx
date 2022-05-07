@@ -1,4 +1,4 @@
-import {callGetAuthors, callGetAuthorWorks} from "../../apiClient";
+import {callGetAuthorWorks} from "../../apiClient";
 import {useCallback, useEffect, useState} from "react";
 import styled from "styled-components";
 
