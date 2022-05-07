@@ -1,5 +1,5 @@
 import {callGetAuthors, callGetAuthorWorks} from "../../apiClient";
-import {useEffect, useState} from "react";
+import {useCallback, useEffect, useState} from "react";
 import styled from "styled-components";
 
 interface IProps {
@@ -10,12 +10,12 @@ export const AuthorWorks = ({author} : IProps) => {
 
     const [works, setWorks] = useState<string[]>()
 
-    const retrieveWorks = async () => {
+    const retrieveWorks = useCallback(async () => {
         if (author) {
             const response = await callGetAuthorWorks(author)
             setWorks(response.data.map((obj : {title: string})=>obj.title))
         }
-    }
+    },[author])
 
     useEffect(() => {
           retrieveWorks()
