@@ -29,10 +29,12 @@ export const AuthorList = ({setAuthor} : IProps) => {
 }
 
 const Wrapper = styled.div`
-  height: 100%;
+  min-height: 100%;
 
   & > ul {
     text-align: left;
+    max-height: 80%;
+    overflow-y: auto;
   }
 
   & li {
