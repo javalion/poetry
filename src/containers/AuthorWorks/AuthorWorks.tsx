@@ -23,7 +23,7 @@ export const AuthorWorks = ({author} : IProps) => {
 
     return <Wrapper>
         <h2>{author ? "Works of " + author : null}</h2>
-        {works && <ul>
+        {works && <ul aria-label="works">
             {works.map((work : string, idx) => <li key={idx + work}>{work}</li>)}
         </ul>
         }

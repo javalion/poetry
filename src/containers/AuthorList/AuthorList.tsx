@@ -22,7 +22,7 @@ export const AuthorList = ({setAuthor} : IProps) => {
     return <Wrapper>
         <h2>Authors</h2>
         <hr />
-        {authors && <ul>
+        {authors && <ul aria-label="authors">
             {authors.map((author) => <li key={author} onClick={() => setAuthor(author)}>{author}</li>)}
         </ul>}
     </Wrapper>
