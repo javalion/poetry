@@ -15,3 +15,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: #FFF;
+  padding: 0 15px;
+}
+
+header a {
+  color: #61dafb;
+  display: block;
+}
+
