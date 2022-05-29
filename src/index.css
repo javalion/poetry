@@ -1,5 +1,5 @@
 html, body {
-  height: 100%;
+  height: 100vh;
 }
 
 body {
@@ -19,7 +19,7 @@ code {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #000;
+  background-color: #232c3f;
   color: #FFF;
   padding: 0 15px;
 }

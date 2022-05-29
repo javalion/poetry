@@ -13,7 +13,8 @@ export const Content = () => {
 
 const Wrapper = styled.div`
   display: flex;
-  height: 100%;
+  height: 85vh;
+  flex: 1;
   
   & > :first-child {
     flex-grow: 1;

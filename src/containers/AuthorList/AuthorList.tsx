@@ -29,12 +29,16 @@ export const AuthorList = ({setAuthor} : IProps) => {
 }
 
 const Wrapper = styled.div`
-  min-height: 100%;
+
+  border-top: 1px dotted #FFF;
+  background-color: #0e1728;
+  color: #FFF;
 
   & > ul {
     text-align: left;
-    max-height: 80%;
-    overflow-y: auto;
+    max-height: 72vh;
+    overflow: auto;
+
   }
 
   & li {
